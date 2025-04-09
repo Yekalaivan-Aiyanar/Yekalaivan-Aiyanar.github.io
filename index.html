@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yekalaivan Aiyanar - Portfolio</title>
+    <title>Hey! - Yekalaivan Aiyanar</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <h1 class="logo">YA</h1>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <!-- Add theme toggle button -->
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <!-- Add hamburger menu for mobile -->
+                <button class="menu-toggle">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/experience.html">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Yekalaivan Aiyanar</h1>
-            <h2>Software Engineer</h2>
-            <p>Passionate about building scalable solutions and driving innovation</p>
+            <h1>Hey There!</h1>
+            <h2>SWE Intern | Project Management Intern</h2>
+            <p>I'm Yekalaivan and I'm a student at Big Picture Bellevue in Washington. I'm a eager learner and always on the look out for new opportunities!</p>
+            <p>I have a passion for software development/engineering and project management.</p>
+                <p>Let's connect and have the opportunities to make big impacts!</p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn primary">Contact Me</a>
                 <a href="#experience" class="btn secondary">View Experience</a>
@@ -37,30 +49,39 @@
 
     <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Me</h2>
+        <h2 class="about-content">About Me</h2>
         <div class="about-content">
             <div class="about-text">
                 <p>Software Engineer with expertise in building scalable applications and implementing efficient solutions. Experienced in full-stack development with a focus on Java, Spring Boot, and modern web technologies.</p>
             </div>
         </div>
     </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <h2>Professional Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Software Engineer</h3>
-                <h4>Tata Consultancy Services</h4>
-                <p class="date">2021 - Present</p>
-                <ul>
-                    <li>Developed and maintained enterprise applications using Java and Spring Boot</li>
-                    <li>Collaborated with cross-functional teams to deliver high-quality solutions</li>
-                    <li>Implemented microservices architecture and RESTful APIs</li>
-                </ul>
+    
+    <section id="list" class="list">
+        <div class="list-content">
+            <div class="list-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <a>Marysville, Washington</a>
+            </div>
+            <div class="list-item">
+                <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/yekalaivan-aiyanar/" target="_blank">LinkedIn</a>
+            </div>
+            <div class="list-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/yekalaivan" target="_blank">GitHub</a>
+            </div>
+            <div class="list-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:yekalaivanaiyanar@gmail.com">Email</a>
+            </div>
+            <div class="list-item">
+                <i class="fas fa-file-pdf"></i>
+                <a href="The Doctor Pathway 2024 Handbook.pdf" target="_blank">Resume</a>
             </div>
         </div>
     </section>
+    
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
@@ -93,14 +114,17 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    
+
+    <footer>
+        <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Get In Touch</h2>
         <div class="contact-content">
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                    <a href="mailto:your.email@example.com">yekalaivanaiyanar@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
@@ -109,10 +133,61 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <p>&copy; 2024 Yekalaivan Aiyanar. All rights reserved.</p>
+        <p>&copy; 2024 Yekalaivan Aiyanar</p>
     </footer>
+
+    <!-- Add this section before your main content -->
+    <div class="profile-sidebar">
+        <div class="profile-container">
+            <div class="profile-image">
+                <!-- Replace with your image -->
+                <img src="your-profile-image.jpg" alt="Profile Picture">
+            </div>
+            <h2>Software Engineer & Vinyl Collector</h2>
+            
+            <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Redwood City, CA</span>
+            </div>
+
+            <div class="social-links">
+                <a href="your-linkedin-url" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                
+                <a href="your-github-url" class="social-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+
+                <a href="your-devpost-url" class="social-link">
+                    <i class="fas fa-code"></i>
+                    <span>Devpost</span>
+                </a>
+
+                <a href="your-twitter-url" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+
+                <a href="your-vinyl-instagram" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Vinyls</span>
+                </a>
+
+                <a href="mailto:your.email@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+
+                <a href="your-resume.pdf" class="social-link">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Resume</span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
