@@ -38,12 +38,9 @@ window.addEventListener('scroll', () => {
 
 // Theme toggle functionality
 const themeToggle = document.querySelector('.theme-toggle');
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 
-// Set initial theme based on user's system preference
-document.documentElement.setAttribute('data-theme', 
-    prefersDarkScheme.matches ? 'dark' : 'light'
-);
+// Set initial theme to light mode explicitly
+document.documentElement.setAttribute('data-theme', 'light');
 
 // Update theme icon
 function updateThemeIcon() {
@@ -64,11 +61,14 @@ themeToggle.addEventListener('click', () => {
     updateThemeIcon();
 });
 
-// Check for saved theme preference
+// Check for saved theme preference, but default to light if none exists
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     document.documentElement.setAttribute('data-theme', savedTheme);
     updateThemeIcon();
+} else {
+    document.documentElement.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
 }
 
 // Mobile menu functionality

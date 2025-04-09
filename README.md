@@ -1,3 +1,1 @@
-# testing 1 2 3
-
-# lol hi
+# Yekalaivan's Portfolio, thanks for visiting!
